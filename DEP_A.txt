@@ -1,0 +1,1 @@
+Dependency A remains open until discriminator closes it unmerged
