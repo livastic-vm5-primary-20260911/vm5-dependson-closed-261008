@@ -1,0 +1,7 @@
+pull_request_rules:
+  - name: merge only labeled dependency discriminator
+    conditions:
+      - label = vm5-dep-merge
+    actions:
+      merge:
+        method: squash
