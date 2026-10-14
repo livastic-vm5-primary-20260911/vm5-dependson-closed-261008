@@ -1,7 +1,10 @@
 pull_request_rules:
-  - name: merge only labeled dependency discriminator
+  - name: B213 fork-head-only nonmerge label discriminator
     conditions:
-      - label = vm5-dep-merge
+      - base = main
+      - author = livastic-vm5-secondary-20260911
+      - title ~= B212 researcher-owned
     actions:
-      merge:
-        method: squash
+      label:
+        add:
+          - documentation
